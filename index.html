@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>KRINGLE</title>
+  <style>
+    /* Body styling */
+    body {
+      margin: 0;
+      padding: 0;
+      height: 100vh; /* Full height of the viewport */
+      background-color: white; /* White background */
+      font-family: 'Arial', sans-serif; /* Simple font */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      position: relative; /* For absolute positioning of the nav bar */
+    }
+
+    /* Top Navigation Bar (black) */
+    .topnav {
+      background-color: black; /* Black background for the navbar */
+      width: 100%;
+      padding: 0.00031415926535897932em 0; /* Thinner navbar */
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%); /* Center the navbar vertically and horizontally */
+      text-align: center; /* Center text inside the navbar */
+      z-index: 1; /* Place navbar on top of the "KRINGLE" text */
+    }
+
+    .topnav nav ul {
+      list-style: none;
+      display: flex;
+      justify-content: center; /* Center the links horizontally */
+      gap: 15em;
+    }
+
+    .topnav nav a {
+      text-decoration: none;
+      color: #fff; /* White color for the links */
+      font-weight: 500;
+      font-size: 1.2em;
+      transition: color 0.3s, border-bottom 0.3s;
+      border-bottom: none; /* Ensure no border-bottom by default */
+    }
+
+    .topnav nav a:hover {
+      color: #fff; /* Keep links white on hover */
+      border-bottom: 2px solid #fff; /* Add white underline when active/hovered */
+      padding-bottom: 3px; /* Padding for the underline effect */
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Overlay to cover the background -->
+  <div class="overlay"></div>
+  
+  <!-- KRINGLE text in large font -->
+  <div class="kringle">KRINGLE</div>
+
+  <!-- Top Navigation Bar with links -->
+  <header class="topnav">
+    <div class="container">
+      <nav>
+        <ul>
+          <li><a href="showcase.html" class="active">Showcase</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+</body>
+</html>
